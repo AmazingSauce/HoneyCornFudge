@@ -1,0 +1,39 @@
+<doctype html>
+<html>
+	<head>
+		<title>Javascript</title>
+	</head>
+	<body>
+
+		<div id="header">
+			<h1>My Site</hi>
+		</div>
+
+		<div id="content">
+			<h2>Hey, Here’s my site</h2>
+			<ul>
+				<li>milk</li>
+				<li>eggs</li>
+			</ul>
+			<input id="name" type="text">
+			<button id="addItem">Add an Item</button>
+		</div>
+		<div id="footer">2015 Me, Myself and stuff</div>
+		<script src=http://code.jquery.com/jquery-2.1.0.min.js></script>
+
+		<script>
+
+		// you can give the .click(function()  a name by doing .click(function addItemfuntion().
+			$('#addItem').click(function() {
+				var value = $('#name').val();
+				// this will output what waas in the text in the console.log so user wont see it but the log will
+				console.log(value);
+				// now inserting what was typed into the list of items
+				$('ul').append('<li>' + value + '</li>');
+			});
+
+		</script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<title>Honey Corn Fudge</title>
+
+
+
+	</head>
+	
+	
+	<body>
+
+
+
+		<header>
+			
+			
+
+		</header>
+
+		<nav class="navbar navbar-default">
+
+		  <div class="container-fluid">
+
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+
+		   
+
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+		     
+		     <a class="navbar-brand" href="#">
+		        <img alt="Brand"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXoiDAqTGqIEZVsta8jqDzHXqwX51IbXCjn7gDSeg2pdQI_zPcUw" height"25" width="25"> </a>
+
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		      <ul class="nav navbar-nav">
+
+		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+		          <ul class="dropdown-menu" role="menu">
+
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">One more separated link</a></li>
+
+		          </ul>
+
+		        </li>
+
+		      </ul>
+
+		      <form class="navbar-form navbar-left" role="search">
+
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search">
+		        </div>
+
+
+		        <!-- calling in the onclick funtin that was created called myAlertFunction -->
+
+		        <button type="submit" class="btn btn-default" onclick="myAlertFunction()">Submit</button>
+
+		    
+
+		      </form>
+
+		      <ul class="nav navbar-nav navbar-right">
+
+		        <li><a href="#">Link</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+		          <ul class="dropdown-menu" role="menu">
+
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+
+		          </ul>
+
+		        </li>
+
+		      </ul>
+
+		    </div><!-- /.navbar-collapse -->
+
+		  </div><!-- /.container-fluid -->
+
+		</nav>
+
+
+
+		<!-- image gallery idea http://www.onextrapixel.com/2012/08/03/how-to-create-an-animated-image-gallery-using-html-and-css3/ -->
+
+
+
+
+		<!-- how to create a gif, this is to make the bees gif for the mouse animation http://www.wikihow.com/Create-an-Animated-GIF-Image-with-GIMP-->
+
+				<!-- calling mouse animation script form Mouse.js file-->
+		<script src="Mouse.js"></script>
+
+		<img id="imgDino" src="http://bestuff.com/images/images_of_stuff/64x64crop/t-rex-51807.jpg?1176587870" width="100" height="100" />
+
+		<img id="imgAkita" src="http://animalonline.info/wp-content/uploads/2014/11/akita-inu-puppies.jpg" width="100" height="100" />
+
+		<button onclick='myAlertFunction()'>alert</button>
+
+	    <button onclick="myAlertFunction()">Try it</button>
+
+		
+
+		<script>
+
+		    $(function() {
+		        $("#imgDino").hover(
+		            function() {
+		                $(this).attr("src", "http://ak-hdl.buzzfed.com/static/enhanced/webdr06/2013/6/25/10/anigif_original-grid-image-31713-1372171912-10.gif" );
+		            },
+		            function() {
+		                $(this).attr("src", "http://ak-hdl.buzzfed.com/static/enhanced/webdr06/2013/6/25/10/anigif_enhanced-buzz-31686-1372170883-2.gif");
+		            }                        
+		        );                  
+		    });
+
+
+		     $(function() {
+		        $("#imgAkita").hover(
+		            function() {
+		                $(this).attr("src", "http://www.punjabigraphics.com/animals/images/3/akita-inu42.jpg");
+		            },
+		            function() {
+		                $(this).attr("src", "http://animalonline.info/wp-content/uploads/2014/11/akita-inu-puppies.jpg");
+		            }                        
+		        );                  
+		    });
+		    
+
+		</script>
+
+		<script>
+			function myAlertFunction() {
+			    alert("Hello! I am an alert box!");
+			}
+		</script>
+
+		
+
+	
+
+
+		<footer>
+
+			<nav class="navbar navbar-default navbar-fixed-bottom">
+
+			  <div class="container">
+				<div class="dropdown">
+
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				    Dropdown
+				    <span class="caret"></span>
+				
+  </button>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+				    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+
+				  </ul>
+
+				</div>
+
+			  </div>
+
+			</nav>
+
+		</footer>
+
+	</body>
+
+</html>
