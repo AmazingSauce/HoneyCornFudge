@@ -1,5 +1,5 @@
 //where I found the script for this http://ye5.blogspot.it/2011/01/animated-mouse-cursor-on-mozilla.html
-var trailimage=["http://i99.photobucket.com/albums/l285/Jstznya/Bee/bee-hive.gif", 32, 32] //image path, plus width and height
+var trailimage=["http://i99.photobucket.com/albums/l285/Jstznya/Bee/bee-hive.gif", 20, 20] //image path, plus width and height
 var offsetfrommouse=[0,0] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
 var displayduration=0 //duration in seconds image should remain visible. 0 for always.
 
